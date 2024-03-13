@@ -1,0 +1,36 @@
+{
+  "name": "Lampa.MX",
+  "type": "list",
+  "headline": "Lampa Media Station",
+  "version": "1.0.0",
+  "parameter": "content:https://lampa.mx/msx/start.json",
+  "action": "[settings:validate_links:0|home]",
+  "dictionary": "https://lampa.mx/msx/lang/ru.json",
+   "template": {
+        "type": "separate",
+      "layout": "0,0,2,3",
+      "color": "msx-glass"
+   },
+   "items": [
+      {
+         "title":"Lampa",
+         "image": "https://lampa.mx/msx-logo.png",
+         "action": "link:https://lampa.mx"
+      },
+	  {
+         "title":"Lampa LITE",
+         "image": "http://lite.lampa.mx/msx-logo.png",
+         "action": "link:http://lite.lampa.mx"
+      },
+      {
+         "title":"OTTplayer",
+         "image": "http://msx.noname.h1n.ru/msx/img/ottplayer.jpg",
+         "action": "link:https://ottp.eu.org/f/"
+      },
+      {
+         "title":"Speedtest",
+         "image": "http://msx.noname.h1n.ru/msx/img/test.png",
+         "action": "link:http://openspeedtest.com/Get-widget.php?Auto=3"
+      }
+   ]
+}
